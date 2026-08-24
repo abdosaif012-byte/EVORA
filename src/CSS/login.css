@@ -1,0 +1,35 @@
+.loginPage {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+}
+
+.loginImage {
+  width: 65%;
+  min-height: 100vh;
+
+  background-image: url("../Images/pexels-cottonbro-6220852.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.loginForm {
+  width: 35%;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: white;
+}
+.login-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.lgnLogo{
+    width: 390px;
+}

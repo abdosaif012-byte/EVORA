@@ -1,22 +1,34 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
-import { Header } from './Pages/header'
-import { Hero } from './Pages/hero'
-import { Home } from './Pages/home'
+import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-function App() {
-  const [count, setCount] = useState(0)
+import { Header } from "./Pages/header";
+import { Home } from "./Pages/home";
+import { Login } from "./Pages/login";
 
+function MainLayout() {
   return (
     <>
-    <Header />
-    < Hero />
-    < Home />
+      <Header />
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
     </>
-  )
+  );
 }
 
-export default App
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        {/* Pages WITHOUT Navbar */}
+        <Route path="/login" element={<Login />} />
+
+        {/* Pages WITH Navbar */}
+        <Route path="*" element={<MainLayout />} />
+      </Routes>
+    </BrowserRouter>
+  );
+}
+
+export default App;

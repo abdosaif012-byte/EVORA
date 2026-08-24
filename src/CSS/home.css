@@ -4,6 +4,12 @@
   padding: 10px 0;
   width: 100%;
 }
+.evora-h1{
+  font-family: "Bodoni Moda", serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+}
 
 .marquee-content {
   display: flex;
@@ -24,7 +30,6 @@
   font-size: 20px;
 }
 
-
 /* Shop Section */
 
 .shop {
@@ -33,7 +38,6 @@
   width: 100%;
   /* gap : 10px */
 }
-
 
 .Men,
 .Women,
@@ -52,7 +56,6 @@
   align-items: center;
 }
 
-
 /* Images */
 
 .Women {
@@ -63,36 +66,34 @@
   background-image: url("../Images/Men\ shop.jpg");
 }
 
-.Fragrances{
+.Fragrances {
   background-image: url("../Images/frag.jpg");
   background-position: bottom;
 }
-.Accessories{
+.Accessories {
   background-image: url("../Images/Accessories\ shop.jpg");
 }
 
 /* Dark overlay */
 
 .Men::before,
-.Women::before ,
-.Fragrances::before ,
-.Accessories::before 
-{
+.Women::before,
+.Fragrances::before,
+.Accessories::before {
   content: "";
   position: absolute;
-  background-color: rgba(0,0,0, .5);
+  background-color: rgba(0, 0, 0, 0.5);
   inset: 0;
   transition: opacity 0.5s ease;
 }
 
 .Men:hover::before,
-.Women:hover::before ,
-.Fragrances:hover:before ,
-.Accessories:hover:before  {
-    opacity: 0.2;
-    transition: .5s;
+.Women:hover::before,
+.Fragrances:hover:before,
+.Accessories:hover:before {
+  opacity: 0.2;
+  transition: 0.5s;
 }
-
 
 /* Buttons */
 
@@ -123,13 +124,11 @@
   transition: all 0.4s ease;
 }
 
-
 .ShopWomen:hover,
 .ShopMen:hover {
   background: white;
   color: black;
 }
-
 
 /* Animation */
 
@@ -142,16 +141,161 @@
     transform: translateX(-50%);
   }
 }
+.hero {
+  background-image: url("../Images/pexels-h-diye-saribas-643357931-26261303.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.evora-h1{
+  font-family: "Bodoni Moda", serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.content {
+  margin-left: 50px;
+  text-align: left;
+  max-width: 600px;
+  padding-top: 62px;
+}
+
+.content h1 {
+  color: #fff;
+  font-size: clamp(3rem, 7vw, 7rem);
+  font-family: system-ui, Arial, sans-serif;
+  font-weight: 400;
+  letter-spacing: 10px;
+}
+
+.content h2 {
+  font-size: clamp(2rem, 4vw, 3.8rem);
+  color: #fff;
+  font-family: system-ui, Arial, sans-serif;
+
+  margin: 30px 0 0 7px;
+
+  line-height: 1.25;
+  letter-spacing: 4px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.content p {
+  margin-left: 15px;
+  margin-top: 30px;
+
+  color: rgba(255, 255, 255, 0.85);
+
+  font-size: 1.2rem;
+  line-height: 1.8;
+  letter-spacing: 1px;
+  font-style: italic;
+  max-width: 420px;
+
+  margin-bottom: 20px;
+}
+
+.ShopNow {
+  display: inline-block;
+
+  margin-left: 15px;
+  margin-bottom: 20px;
+
+  padding: 25px 50px;
+
+  background: transparent;
+  color: white;
+
+  text-decoration: none;
+
+  font-size: 1.2rem;
+  font-weight: 600;
+
+  font-family: system-ui, Arial, sans-serif;
+
+  letter-spacing: 3px;
+  text-transform: uppercase;
+
+  border: 1px solid white;
+
+  cursor: pointer;
+
+  transition: all 0.4s ease-in-out;
+}
+
+.ShopNow:hover {
+  background: white;
+  color: black;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .content {
+    margin-top: -100px;
+    margin-left: 30px;
+  }
+
+  .content h1 {
+    letter-spacing: 6px;
+  }
+
+  .content h2 {
+    letter-spacing: 3px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .hero {
+    background-position: center;
+  }
+
+  .content {
+    margin-top: -100px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 0px;
+  }
+
+  .content h1 {
+    letter-spacing: 4px;
+  }
+
+  .content h2 {
+    margin-left: 0;
+    margin-top: 20px;
+    letter-spacing: 2px;
+  }
+
+  .content p {
+    margin-left: 0;
+    font-size: 0.95rem;
+    max-width: 100%;
+  }
+
+  .ShopNow {
+    margin-left: 0;
+    padding: 18px 35px;
+    font-size: 1rem;
+    letter-spacing: 2px;
+  }
+}
 
 
 /* Responsive */
 
 @media (max-width: 768px) {
-
   .shop {
     grid-template-columns: 1fr;
   }
-
 
   .ShopWomen,
   .ShopMen {
@@ -159,8 +303,13 @@
     font-size: 0.9rem;
   }
 
-
   .marquee-content img {
     width: 70px;
   }
+}
+h1{
+  font-family: "Bodoni Moda", serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
 }
