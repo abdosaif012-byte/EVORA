@@ -150,16 +150,20 @@ font-family: "Bodoni Moda", serif;
   }
 }
 .hero {
-  background-image: url("../Images/pexels-h-diye-saribas-643357931-26261303.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2)),url("../Images/hero3.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  /* background-position: center; */
+  background-position: top;
   width: 100%;
   min-height: 100vh;
 
   display: flex;
   justify-content: flex-start;
   align-items: center;
+}
+.hero::before{
+    background-color: rgba(0, 0, 0, 0.5);
+
 }
 .evora-h1{
   font-family: "Bodoni Moda", serif;
@@ -169,6 +173,7 @@ font-family: "Bodoni Moda", serif;
 }
 
 .content {
+  color: black;
   margin-left: 50px;
   text-align: left;
   max-width: 600px;
@@ -194,6 +199,7 @@ font-family: "Bodoni Moda", serif;
   letter-spacing: 4px;
   font-weight: 400;
   text-transform: uppercase;
+  
 }
 
 .content p {

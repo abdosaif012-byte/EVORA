@@ -16,7 +16,7 @@ export function Home() {
 
           <p>Discover carefully crafted pieces made for every moment.</p>
 
-          <button className="ShopNow">Shop Now</button>
+          <button className="ShopNow">Explore Collection</button>
         </div>
       </div>
       <div className="brand-marquee">
