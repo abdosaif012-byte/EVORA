@@ -1,5 +1,4 @@
 import "../CSS/home.css";
-import WhiteLogo from "../Images/ÉVORA white (1).png";
 
 export function Home() {
   return (
@@ -22,47 +21,47 @@ export function Home() {
       </div>
       <div className="brand-marquee">
         <div className="marquee-content">
-          <img src={WhiteLogo} alt="ÉVORA logo" />
-          <span>•</span>
-          <img src={WhiteLogo} alt="ÉVORA logo" />
-          <span>•</span>
-          <img src={WhiteLogo} alt="ÉVORA logo" />
-          <span>•</span>
-          <img src={WhiteLogo} alt="ÉVORA logo" />
-          <span>•</span>
-          <img src={WhiteLogo} alt="ÉVORA logo" />
-          <span>•</span>
-          <img src={WhiteLogo} alt="ÉVORA logo" />
-          <span>•</span>
-          <img src={WhiteLogo} alt="ÉVORA logo" />
-          <span>•</span>
-          <img src={WhiteLogo} alt="ÉVORA logo" />
-          <span>•</span>
-          <img src={WhiteLogo} alt="ÉVORA logo" />
-          <span>•</span>
-          <img src={WhiteLogo} alt="ÉVORA logo" />
-          <span>•</span>
-          <img src={WhiteLogo} alt="ÉVORA logo" />
-          <span>•</span>
-          <img src={WhiteLogo} alt="ÉVORA logo" />
-          <span>•</span>
-          <img src={WhiteLogo} alt="ÉVORA logo" />
-          <span>•</span>
-          <img src={WhiteLogo} alt="ÉVORA logo" />
-          <span>•</span>
-          <img src={WhiteLogo} alt="ÉVORA logo" />
-          <span>•</span>
-          <img src={WhiteLogo} alt="ÉVORA logo" />
-          <span>•</span>
-          <img src={WhiteLogo} alt="ÉVORA logo" />
-          <span>•</span>
-          <img src={WhiteLogo} alt="ÉVORA logo" />
-          <span>•</span>
-          <img src={WhiteLogo} alt="ÉVORA logo" />
-          <span>•</span>
-          <img src={WhiteLogo} alt="ÉVORA logo" />
-          <span>•</span>
-          <img src={WhiteLogo} alt="ÉVORA logo" />
+          <span className="evoraBar">ÉVORA</span>
+          
+          <span className="evoraBar">ÉVORA</span>
+          
+          <span className="evoraBar">ÉVORA</span>
+          
+          <span className="evoraBar">ÉVORA</span>
+          
+          <span className="evoraBar">ÉVORA</span>
+          
+          <span className="evoraBar">ÉVORA</span>
+          
+          <span className="evoraBar">ÉVORA</span>
+          
+          <span className="evoraBar">ÉVORA</span>
+          
+          <span className="evoraBar">ÉVORA</span>
+          
+          <span className="evoraBar">ÉVORA</span>
+          
+          <span className="evoraBar">ÉVORA</span>
+          
+          <span className="evoraBar">ÉVORA</span>
+          
+          <span className="evoraBar">ÉVORA</span>
+          
+          <span className="evoraBar">ÉVORA</span>
+          
+          <span className="evoraBar">ÉVORA</span>
+          
+          <span className="evoraBar">ÉVORA</span>
+          
+          <span className="evoraBar">ÉVORA</span>
+          
+          <span className="evoraBar">ÉVORA</span>
+          
+          <span className="evoraBar">ÉVORA</span>
+          
+          <span className="evoraBar">ÉVORA</span>
+          
+          <span className="evoraBar">ÉVORA</span>
         </div>
       </div>
       <div className="shop">
