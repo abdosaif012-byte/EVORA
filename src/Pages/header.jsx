@@ -1,9 +1,6 @@
-import WhiteLogo from "../Images/ÉVORA white (1).png";
-import { LuShoppingCart } from "react-icons/lu";
 import { MdOutlineShoppingBag } from "react-icons/md";
-// import { FaRegUser } from "react-icons/fa6";
 import { HiOutlineUser } from "react-icons/hi";
-
+import { RiCustomerServiceFill } from "react-icons/ri";
 import { IoSearch } from "react-icons/io5";
 import { HiOutlineMenu, HiOutlineX } from "react-icons/hi";
 import { Link } from "react-router-dom";
@@ -82,6 +79,11 @@ export function Header() {
           <Link to="/accessories" onClick={handleLinkClick}>Accessories</Link>
           <Link to="/fragrances" onClick={handleLinkClick}>Fragrances</Link>
         </div>
+      </div>
+      <div className="chatbot">
+          <Link to="/chatbot" >
+          <RiCustomerServiceFill />
+          </Link>
       </div>
     </>
   );

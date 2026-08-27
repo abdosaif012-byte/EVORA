@@ -1,9 +1,10 @@
-import "./App.css";
+// import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import { Header } from "./Pages/header";
 import { Home } from "./Pages/home";
 import { Login } from "./Pages/login";
+import { Men } from "./Pages/men";
 
 function MainLayout() {
   return (
@@ -12,6 +13,7 @@ function MainLayout() {
 
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/men" element={<Men />} />
       </Routes>
     </>
   );

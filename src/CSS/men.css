@@ -1,0 +1,121 @@
+
+ .men-Hero {
+  background-image:  url("../Images/men.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.men-Content {
+  color: black;
+  margin-left: 50px;
+  margin-top: 130px;  
+  text-align: left;
+  max-width: 600px;
+}
+
+#men-h1 {
+  color: #fff;
+  font-size: clamp(3rem, 7vw, 7rem);
+  font-weight: 400;
+  letter-spacing: 10px; 
+  text-align: left;
+  line-height: 1.1;
+  margin: 0;
+  font-family: "Bodoni Moda", serif;
+  font-optical-sizing: auto;
+
+}
+.men-Content p{
+ 
+  margin-left: 15px;
+  color: rgba(255, 255, 255, 0.85);
+
+  font-size: 1.4rem;
+  line-height: 1.8;
+  letter-spacing: 1px;
+  font-style: italic;
+  max-width: 420px;
+  margin-bottom: 20px;
+
+}
+.men-Collection{
+   display: inline-block;
+
+  margin-left: 15px;
+  margin-top: 20px;
+
+  padding: 25px 50px;
+
+  background: transparent;
+  color: white;
+
+  text-decoration: none;
+
+  font-size: 1.2rem;
+  font-weight: 600;
+
+  font-family: system-ui, Arial, sans-serif;
+
+  letter-spacing: 3px;
+  text-transform: uppercase;
+
+  border: 1px solid white;
+
+  cursor: pointer;
+
+  transition: all 0.4s ease-in-out;
+}
+.men-Collection:hover {
+  background: white;
+  color: black;
+}
+
+
+/* Tablet */
+@media (max-width: 900px) {
+  .men-Content {
+    margin-top: -100px;
+    margin-left: 30px;
+  }
+
+  #men-h1 {
+    letter-spacing: 6px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .men-Hero {
+    background-position: center;
+  }
+
+  .men-Content {
+    margin-top: -100px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 0px;
+  }
+
+  #men-h1 {
+    letter-spacing: 4px;
+  }
+  .men-Content p{
+    margin-left: 0;
+    font-size: 0.95rem;
+    max-width: 100%;
+ 
+  }
+  .men-Collection{
+    margin-left: 0;
+    padding: 18px 35px;
+    font-size: 1rem;
+    letter-spacing: 2px;
+  }
+}

@@ -125,7 +125,7 @@ html {
 
   padding: 0 80px;
 
-  background-color: rgba(249, 249, 249, 0.9);
+  background-color: rgba(249, 249, 249, 0.8);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
 
@@ -250,6 +250,32 @@ html {
   white-space: nowrap;
 }
 
+.chatbot {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+}
+
+.chatbot a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 50px;
+    height: 50px;
+
+    background-color: white;
+    color: black;
+
+    font-size: 24px;
+    text-decoration: none;
+
+    border-radius: 50%;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
 /* Tablet */
 @media (max-width: 900px) {
   .NavBar {
@@ -275,6 +301,16 @@ html {
   .profile button {
     font-size: 20px;
   }
+   .chatbot {
+        bottom: 15px;
+        right: 15px;
+    }
+
+    .chatbot a {
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+    }
 }
 
 /* Mobile */
@@ -303,4 +339,14 @@ html {
   #cart {
     font-size: 20px;
   }
+   .chatbot {
+        bottom: 15px;
+        right: 15px;
+    }
+
+    .chatbot a {
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+    }
 }
