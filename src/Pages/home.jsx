@@ -33,51 +33,9 @@ export function Home() {
           </button>
         </div>
       </div>
-      <div className="brand-marquee">
-        <div className="marquee-content">
-          <span className="evoraBar">ÉVORA</span>
-
-          <span className="evoraBar">ÉVORA</span>
-
-          <span className="evoraBar">ÉVORA</span>
-
-          <span className="evoraBar">ÉVORA</span>
-
-          <span className="evoraBar">ÉVORA</span>
-
-          <span className="evoraBar">ÉVORA</span>
-
-          <span className="evoraBar">ÉVORA</span>
-
-          <span className="evoraBar">ÉVORA</span>
-
-          <span className="evoraBar">ÉVORA</span>
-
-          <span className="evoraBar">ÉVORA</span>
-
-          <span className="evoraBar">ÉVORA</span>
-
-          <span className="evoraBar">ÉVORA</span>
-
-          <span className="evoraBar">ÉVORA</span>
-
-          <span className="evoraBar">ÉVORA</span>
-
-          <span className="evoraBar">ÉVORA</span>
-
-          <span className="evoraBar">ÉVORA</span>
-
-          <span className="evoraBar">ÉVORA</span>
-
-          <span className="evoraBar">ÉVORA</span>
-
-          <span className="evoraBar">ÉVORA</span>
-
-          <span className="evoraBar">ÉVORA</span>
-
-          <span className="evoraBar">ÉVORA</span>
-        </div>
-      </div>
+      <br />
+      <br />
+      
       <div className="brand-story">
         <div className="brand-content">
           <span class="brand-label">THE ÉVORA STORY</span>
