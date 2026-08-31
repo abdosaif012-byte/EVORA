@@ -1,35 +1,197 @@
-.loginPage {
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  color: #000;
+}
+
+.login-signup {
   width: 100%;
   min-height: 100vh;
   display: flex;
 }
 
-.loginImage {
-  width: 65%;
-  min-height: 100vh;
-
-  background-image: url("../Images/hero2.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-.loginForm {
-  width: 35%;
-  min-height: 100vh;
-
+.login-section {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  padding: 0 40px;
+}
 
-  background: white;
+.login-section > .brand {
+  text-align: center;
+  margin-bottom: 40px;
 }
-.login-form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
+.brand #loginbrand {
+  font-family: "Bodoni Moda", serif;
+  font-size: 70px;
+  font-weight: 400;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  margin: 0;
 }
-.lgnLogo{
-    width: 390px;
+
+.form-container {
+  max-width: 380px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.form-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 40px;
+  font-family: "Inter", sans-serif;
+}
+
+#form-title {
+    font-family: "Inter", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+.login-input {
+  margin-bottom: 30px;
+}
+
+.login-input label {
+  display: block;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #666;
+  margin-bottom: 8px;
+  font-family: "Inter", sans-serif;
+}
+
+.login-input input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  padding: 8px 0;
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  transition: border-color 0.3s ease;
+}
+
+.login-input input:focus {
+  outline: none;
+  border-bottom-color: #000;
+}
+
+.login-actions {
+  margin-top: 20px;
+}
+
+.login-actions button {
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 16px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+.login-actions button:hover {
+  background-color: #333;
+}
+
+.forgot-wrap {
+  text-align: center;
+  margin-top: 16px;
+}
+
+.forgot-wrap a {
+  font-size: 12px;
+  color: #666;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Inter", sans-serif;
+  transition: color 0.3s ease;
+}
+
+.forgot-wrap a:hover {
+  color: #000;
+}
+
+.register {
+  text-align: center;
+  border-top: 1px solid #eee;
+  margin-top: 30px;
+  padding-top: 30px;
+}
+
+#register-p {
+  font-size: 12px;
+  color: #666;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  font-family: "Inter", sans-serif;
+}
+
+.register-btn {
+  display: block;
+  border: 1px solid #000;
+  color: #000;
+  padding: 12px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.register-btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Right Hero Image */
+.login-image {
+  display: none;
+  width: 100%;
+  position: relative;
+}
+
+.login-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+/* Two column layout: 40% / 60% */
+@media (min-width: 768px) {
+  .login-section {
+    width: 45%;
+    padding: 0 80px;
+  }
+
+  .login-image {
+    display: block;
+    width: 55%;
+  }
+  .login-image img {
+    width: 55vw;
+  }
 }

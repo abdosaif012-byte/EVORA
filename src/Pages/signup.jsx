@@ -2,7 +2,7 @@ import "../CSS/login.css";
 import LoginPhoto from "../Images/pisces-portrait-beautiful-woman (1).jpg"
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
-export function Login() {
+export function SignUp() {
   return (
     <div className="login-signup">
 
@@ -16,9 +16,17 @@ export function Login() {
         </div>
 {/*  */}
       <div className="form-container">
-        <h3 class="form-title" id="form-title">Log In</h3>
+        <h3 class="form-title" id="form-title">create Account</h3>
 
         <form action="#" method="POST" className="login-form">
+          <div className="login-input">
+            <label htmlFor="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required />
+          </div>
+          <div className="login-input">
+            <label htmlFor="phone">phone Number</label>
+            <input type="text" id="phone" name="phone" placeholder="Enter your phone number" required />
+          </div>
           <div className="login-input">
             <label htmlFor="email">Email</label>
             <input type="email" id="email" name="email" placeholder="Enter your email" required />
@@ -30,17 +38,14 @@ export function Login() {
           </div>
 
           <div className="login-actions">
-            <button type="submit" >Log In</button>
-            <div class="forgot-wrap">
-              <a href="#">Forgot your password?</a>
-            </div>
+            <button type="submit" >Create Account</button>
           </div>
         </form>
 
         <div className="register">
-          <p id="register-p">Don't have an account?</p>
-          {/* <a class="register-btn" href="#">Register</a> */}
-          <Link to="/signup" className="register-btn" >Register</Link>
+          <p id="register-p">Already have an account?</p>
+          {/* <a class="register-btn" href="#">Log In</a> */}
+          <Link to="/login" className="register-btn" >Log In</Link>
         </div>
       </div>
       </div>

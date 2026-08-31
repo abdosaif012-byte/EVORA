@@ -80,6 +80,9 @@
 
 /* Tablet */
 @media (max-width: 900px) {
+  .fragrances-Hero {
+    background-position: left ;
+  }
   .fragrances-Content {
     margin-top: -100px;
     margin-left: 30px;
@@ -93,7 +96,7 @@
 /* Mobile */
 @media (max-width: 600px) {
   .fragrances-Hero {
-    background-position: center;
+    background-position: left ;
   }
 
   .fragrances-Content {

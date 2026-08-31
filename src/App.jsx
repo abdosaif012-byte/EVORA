@@ -8,6 +8,7 @@ import { Men } from "./Pages/men";
 import { Women } from "./Pages/women";
 import { Accessories} from "./Pages/accessories";
 import { Fragrances } from "./Pages/fragrances";
+import { SignUp } from "./Pages/signup";
 
 function MainLayout() {
   return (
@@ -31,6 +32,7 @@ function App() {
       <Routes>
         {/* Pages WITHOUT Navbar */}
         <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<SignUp />} />
 
         {/* Pages WITH Navbar */}
         <Route path="*" element={<MainLayout />} />
