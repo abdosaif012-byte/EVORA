@@ -1,0 +1,152 @@
+
+
+
+.edit-product {
+    margin-top:80px;
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 40px 20px;
+
+  font-family: "Inter", sans-serif;
+  color: #000;
+}
+
+/* Title */
+
+.edit-product h1 {
+  font-family: "Bodoni Moda", serif;
+  font-size: 42px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  margin: 0 0 40px;
+  text-align: center;
+}
+
+/* Form */
+
+.edit-product form {
+  width: 100%;
+  max-width: 420px;
+}
+
+/* Inputs */
+
+.edit-product form > div {
+  margin-bottom: 25px;
+}
+
+.edit-product label {
+  display: block;
+
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #666;
+
+  margin-bottom: 8px;
+}
+
+.edit-product input,
+.edit-product textarea,
+.edit-product select {
+  width: 100%;
+
+  border: none;
+  border-bottom: 1px solid #ddd;
+
+  padding: 10px 0;
+
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+
+  background: transparent;
+
+  transition: border-color 0.3s ease;
+}
+
+.edit-product input:focus,
+.edit-product textarea:focus,
+.edit-product select:focus {
+  outline: none;
+  border-bottom-color: #000;
+}
+
+/* Description */
+
+.edit-product textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+/* Select */
+
+.edit-product select {
+  cursor: pointer;
+}
+
+/* Success message */
+
+.edit-product form p {
+  text-align: center;
+
+  font-size: 14px;
+  color: #000;
+
+  margin: 20px 0;
+}
+
+/* Buttons */
+
+.edit-product button {
+  width: 100%;
+
+  border: none;
+
+  padding: 16px;
+
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  font-family: "Inter", sans-serif;
+
+  cursor: pointer;
+
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Save button */
+
+.edit-product button[type="submit"] {
+  background-color: #000;
+  color: #fff;
+
+  margin-top: 10px;
+}
+
+.edit-product button[type="submit"]:hover {
+  background-color: #333;
+}
+
+/* Cancel button */
+
+.edit-product button[type="button"] {
+  background-color: #fff;
+  color: #000;
+
+  border: 1px solid #000;
+
+  margin-top: 12px;
+}
+
+.edit-product button[type="button"]:hover {
+  background-color: #000;
+  color: #fff;
+}

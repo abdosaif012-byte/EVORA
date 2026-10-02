@@ -19,7 +19,7 @@ export function Home() {
             ELEGANCE.
           </h2>
 
-          <p>Discover carefully crafted pieces made for every moment.</p>
+          <p id="hero-p">Discover carefully crafted pieces made for every moment.</p>
 
           <button
             className="ShopNow"
@@ -38,7 +38,7 @@ export function Home() {
       
       <div className="brand-story">
         <div className="brand-content">
-          <span class="brand-label">THE ÉVORA STORY</span>
+          <span className="brand-label">THE ÉVORA STORY</span>
 
           <h2>
             TIMELESS

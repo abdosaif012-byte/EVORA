@@ -1,17 +1,18 @@
 import { MdOutlineShoppingBag } from "react-icons/md";
 import { HiOutlineUser } from "react-icons/hi";
 import { RiCustomerServiceFill } from "react-icons/ri";
-import { IoSearch } from "react-icons/io5";
 import { HiOutlineMenu, HiOutlineX } from "react-icons/hi";
 import { Link } from "react-router-dom";
 import "../CSS/header.css";
-import {goToTop} from "../JS/goToTop";
+import { goToTop } from "../JS/goToTop";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
+import toast, { Toaster } from "react-hot-toast";
 
+import { Chatbot } from "./chatbot";
 
 export function Header() {
-
+  const token = localStorage.getItem("token");
   const navigate = useNavigate();
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
@@ -24,6 +25,8 @@ export function Header() {
 
   return (
     <>
+      <Toaster position="top-right" />
+
       <div className="NavBar">
         <button
           className="menuToggle"
@@ -34,28 +37,43 @@ export function Header() {
         </button>
 
         <div className="Links">
-          <Link to="/" onClick={goToTop}>Home</Link>
-          <Link to="/men" onClick={goToTop}>Men</Link>
-          <Link to="/women" onClick={goToTop}>Women</Link>
-          <Link to="/accessories" onClick={goToTop}>Accessories</Link>
-          <Link to="/fragrances" onClick={goToTop}>Fragrances</Link>
+          <Link to="/" onClick={goToTop}>
+            Home
+          </Link>
+          <Link to="/men" onClick={goToTop}>
+            Men
+          </Link>
+          <Link to="/women" onClick={goToTop}>
+            Women
+          </Link>
+          <Link to="/accessories" onClick={goToTop}>
+            Accessories
+          </Link>
+          <Link to="/fragrances" onClick={goToTop}>
+            Fragrances
+          </Link>
         </div>
         <div className="logoImg">
           <Link to="/" onClick={goToTop} id="homeEvora">
-          ÉVORA
+            ÉVORA
           </Link>
         </div>
         <div className="profile">
-          <Link to="/search">
-            <IoSearch id="cart" />
+          <Link
+            to="/cart"
+            onClick={(e) => {
+              if (!localStorage.getItem("token")) {
+                e.preventDefault();
+                toast.error("Login first to add to cart");
+              }
+            }}
+          >
+            <MdOutlineShoppingBag id="shopBag" />
           </Link>
-          <Link to ="/cart">
-          <MdOutlineShoppingBag id="shopBag"/>
+
+          <Link to={token ? "/profile" : "/login"}>
+            <HiOutlineUser id="login" />
           </Link>
-          <Link to ="/login">
-          <HiOutlineUser id="login" />
-          </Link>
-          
         </div>
       </div>
 
@@ -73,18 +91,25 @@ export function Header() {
           <HiOutlineX />
         </button>
         <div className="sidebarLinks">
-          <Link to="/" onClick={handleLinkClick}>Home</Link>
-          <Link to="/men" onClick={handleLinkClick}>Men</Link>
-          <Link to="/women" onClick={handleLinkClick}>Women</Link>
-          <Link to="/accessories" onClick={handleLinkClick}>Accessories</Link>
-          <Link to="/fragrances" onClick={handleLinkClick}>Fragrances</Link>
+          <Link to="/" onClick={handleLinkClick}>
+            Home
+          </Link>
+          <Link to="/men" onClick={handleLinkClick}>
+            Men
+          </Link>
+          <Link to="/women" onClick={handleLinkClick}>
+            Women
+          </Link>
+          <Link to="/accessories" onClick={handleLinkClick}>
+            Accessories
+          </Link>
+          <Link to="/fragrances" onClick={handleLinkClick}>
+            Fragrances
+          </Link>
         </div>
       </div>
-      <div className="chatbot">
-          <Link to="/chatbot" >
-          <RiCustomerServiceFill />
-          </Link>
-      </div>
+
+      <Chatbot />
     </>
   );
 }

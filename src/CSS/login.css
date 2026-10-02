@@ -116,6 +116,13 @@ body {
   text-align: center;
   margin-top: 16px;
 }
+.login-error{
+  text-align: center;
+  font-size: 14px;
+  color: red;
+  font-family: "Inter", sans-serif;
+  /* text-transform: capitalize; */
+}
 
 .forgot-wrap a {
   font-size: 12px;
@@ -161,6 +168,9 @@ body {
 .register-btn:hover {
   background-color: #000;
   color: #fff;
+}
+#login-btn-in-signup{
+  margin-bottom: 30px;
 }
 
 /* Right Hero Image */

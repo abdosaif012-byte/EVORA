@@ -250,14 +250,14 @@ html {
   white-space: nowrap;
 }
 
-.chatbot {
+.chatbot-header {
     position: fixed;
     bottom: 20px;
     right: 20px;
     z-index: 9999;
 }
 
-.chatbot a {
+.chatbot-header a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -301,12 +301,12 @@ html {
   .profile button {
     font-size: 20px;
   }
-   .chatbot {
+   .chatbot-header {
         bottom: 15px;
         right: 15px;
     }
 
-    .chatbot a {
+    .chatbot-header a {
         width: 45px;
         height: 45px;
         font-size: 20px;
@@ -339,12 +339,12 @@ html {
   #cart {
     font-size: 20px;
   }
-   .chatbot {
+   .chatbot-header {
         bottom: 15px;
         right: 15px;
     }
 
-    .chatbot a {
+    .chatbot-header a {
         width: 45px;
         height: 45px;
         font-size: 20px;

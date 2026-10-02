@@ -181,7 +181,7 @@
   }
 }
 .hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2)),url("../Images/hero3.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.22)),url("../Images/hero3.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -201,6 +201,9 @@
   font-optical-sizing: auto;
   font-weight: bold;
   font-style: normal;
+}
+#hero-p{
+   font-family: "Bodoni Moda", serif;
 }
 
 .content {
